@@ -1,0 +1,1 @@
+import onload from "onload";
