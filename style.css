@@ -2,10 +2,15 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
-.navbar-brand, .display-4 {
+.navbar-brand, .display-4, .card-header {
   font-family: 'Fredoka One', cursive;
 }
 
-.jumbotron {
-  text-align: center;
+.menu-header {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.menu-card {
+  min-width: 16rem;
 }
