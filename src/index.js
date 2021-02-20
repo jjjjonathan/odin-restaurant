@@ -1,1 +1,5 @@
-import onload from "onload";
+import renderHome from "./home.js";
+
+const homeTab = document.getElementById("home-tab");
+
+document.addEventListener("DOMContentLoaded", renderHome)

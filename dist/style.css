@@ -1,0 +1,11 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand, .display-4 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.jumbotron {
+  text-align: center;
+}
