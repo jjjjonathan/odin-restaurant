@@ -31,10 +31,14 @@ function handleTabClick(tabId) {
 function onload() {
   handleTabClick("home-tab");
 
+  const brand = document.getElementById("brand");
   const homeTab = document.getElementById("home-tab");
   const menuTab = document.getElementById("menu-tab");
   const contactTab = document.getElementById("contact-tab");
 
+  brand.addEventListener("click", () => {
+    handleTabClick("home-tab");
+  });
   homeTab.addEventListener("click", () => {
     handleTabClick("home-tab");
   });

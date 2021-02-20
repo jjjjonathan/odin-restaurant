@@ -2,11 +2,11 @@ export default function render() {
   const menuItems = [
     {
       item: "The Flashburger",
-      description: "Two smashed and grilled patties of our beef/bacon blend covered in cheese and toppings"
+      description: "Two smashed and grilled patties of our beef and bacon blend, covered in American cheese and sauteed onions"
     },
     {
       item: "The Smashburger",
-      description: "Two smashed and grilled patties between a smashed bun"
+      description: "Two smashed and grilled patties between a smashed bun with smashed cheese and pickle mash"
     },
     {
       item: "The Trashburger",
@@ -14,7 +14,11 @@ export default function render() {
     },
     {
       item: "The Thrashburger",
-      description: "Beef crumbles in bernaise sauce"
+      description: "Beef crumbles in bernaise sauce on a rye roll"
+    },
+    {
+      item: "The Crashburger",
+      description: "Vegan scrambled eggs on a plant-based sausage patty, with sourdough bread and a side of tomato juice"
     }
   ]
   
@@ -58,7 +62,7 @@ export default function render() {
     cardContent.textContent = content;
     cardBody.appendChild(cardContent);
 
-    container.appendChild(card);
+    cardDeck.appendChild(card);
   }
 
 }

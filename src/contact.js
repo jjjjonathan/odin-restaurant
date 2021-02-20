@@ -40,7 +40,7 @@ export default function render() {
   container.appendChild(lead);
 
   const listGroup = document.createElement("div");
-  listGroup.classList.add("list-group", "contact-list", "mx-auto", "my-4");
+  listGroup.classList.add("list-group", "contact-list", "mx-auto", "my-4", "shadow");
   container.appendChild(listGroup);
 
   text.links.forEach(link => {

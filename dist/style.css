@@ -6,6 +6,10 @@ html, body {
   font-family: 'Fredoka One', cursive;
 }
 
+.jumbotron {
+  background: none;
+}
+
 .menu-header, .contact-header {
   margin-top: 6rem;
   margin-bottom: 2rem;
@@ -26,4 +30,10 @@ i {
 
 .i-label {
   line-height: 3.2rem;
+}
+
+.vertical-center {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
 }
