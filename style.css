@@ -6,11 +6,24 @@ html, body {
   font-family: 'Fredoka One', cursive;
 }
 
-.menu-header {
+.menu-header, .contact-header {
   margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
 .menu-card {
   min-width: 16rem;
+}
+
+.contact-list {
+  max-width: 20rem;
+}
+
+i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+.i-label {
+  line-height: 3.2rem;
 }

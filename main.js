@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ render)\n/* harmony export */ });\nfunction render() {\n  const text = {\n    h1: \"Contact\",\n    lead: \"Get in touch with us through any of our available channels:\",\n    links: [\n      {\n        iconName: \"facebook\",\n        text: \"Like us on Facebook\",\n      },\n    ],\n  };\n\n  const main = document.getElementById(\"content\");\n  main.textContent = \"\";\n\n  const container = document.createElement(\"div\");\n  container.classList.add(\"container\");\n  main.appendChild(container);\n\n  const h1 = document.createElement(\"h1\");\n  h1.classList.add(\"display-4\", \"contact-header\", \"text-center\");\n  h1.textContent = text.h1;\n  container.appendChild(h1);\n\n  const lead = document.createElement(\"p\");\n  lead.classList.add(\"lead\", \"text-center\");\n  lead.textContent = text.lead;\n  container.appendChild(lead);\n\n  const listGroup = document.createElement(\"div\");\n  listGroup.classList.add(\"list-group\", \"contact-list\", \"mx-auto\", \"my-4\");\n  container.appendChild(listGroup);\n\n  text.links.forEach(link => {\n    addLink(link.iconName, link.text);\n  })\n\n  function addLink(iconName, text) {\n    const link = document.createElement(\"a\");\n    link.href = \"#\";\n    link.classList.add(\"list-group-item\", \"list-group-item-action\");\n\n    const icon = document.createElement(\"i\");\n    icon.classList.add(\"bi-\" + iconName);\n    link.appendChild(icon);\n\n    const span = document.createElement(\"span\");\n    span.classList.add(\"i-label\");\n    span.textContent = text;\n    link.appendChild(span);\n\n    listGroup.appendChild(link);\n  }\n}\n\n\n//# sourceURL=webpack://odin-restaurant/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\n\n\nfunction onload() { \n  (0,_home_js__WEBPACK_IMPORTED_MODULE_0__.default)()\n\n  const homeTab = document.getElementById(\"home-tab\");\n  const menuTab = document.getElementById(\"menu-tab\");\n  const contactTab = document.getElementById(\"contact-tab\");\n\n  homeTab.addEventListener(\"click\", _home_js__WEBPACK_IMPORTED_MODULE_0__.default);\n  menuTab.addEventListener(\"click\", _menu_js__WEBPACK_IMPORTED_MODULE_1__.default);\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", onload);\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n\n\n\n\nfunction onload() { \n  (0,_contact_js__WEBPACK_IMPORTED_MODULE_2__.default)()\n\n  const homeTab = document.getElementById(\"home-tab\");\n  const menuTab = document.getElementById(\"menu-tab\");\n  const contactTab = document.getElementById(\"contact-tab\");\n\n  homeTab.addEventListener(\"click\", _home_js__WEBPACK_IMPORTED_MODULE_0__.default);\n  menuTab.addEventListener(\"click\", _menu_js__WEBPACK_IMPORTED_MODULE_1__.default);\n  contactTab.addEventListener(\"click\", _contact_js__WEBPACK_IMPORTED_MODULE_2__.default);\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", onload);\n\n//# sourceURL=webpack://odin-restaurant/./src/index.js?");
 
 /***/ }),
 
