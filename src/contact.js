@@ -7,6 +7,18 @@ export default function render() {
         iconName: "facebook",
         text: "Like us on Facebook",
       },
+      {
+        iconName: "twitter",
+        text: "Follow us on Twitter",
+      },
+      {
+        iconName: "linkedin",
+        text: "Check us out on LinkedIn",
+      },
+      {
+        iconName: "mailbox",
+        text: "Email us",
+      },
     ],
   };
 

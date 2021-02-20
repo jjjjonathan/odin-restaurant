@@ -33,6 +33,8 @@ export default function render() {
 
   const button = document.createElement("button");
   button.classList.add("btn", "btn-primary", "btn-lg");
+  button.id = "menu-button";
   button.textContent = text.button;
+  
   jumbotron.appendChild(button);
 }
