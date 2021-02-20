@@ -11,6 +11,10 @@ export default function render() {
     {
       item: "The Trashburger",
       description: "A beef patty, turkey patty, and fish stick smothered in gravy and barbeque sauce between two soft pretzels"
+    },
+    {
+      item: "The Thrashburger",
+      description: "Beef crumbles in bernaise sauce"
     }
   ]
   
