@@ -7,9 +7,10 @@ export default function render() {
   };
 
   const main = document.getElementById("content");
+  main.textContent = "";
 
   const jumbotron = document.createElement("div");
-  jumbotron.classList.add("jumbotron");
+  jumbotron.classList.add("jumbotron", "text-center");
   main.appendChild(jumbotron);
 
   const h1 = document.createElement("h1");
