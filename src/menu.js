@@ -23,7 +23,7 @@ export default function render() {
   ]
   
   const main = document.getElementById("content");
-  content.textContent = "";
+  main.textContent = "";
 
   const header = document.createElement("h1");
   header.classList.add("text-center", "menu-header", "display-4");
